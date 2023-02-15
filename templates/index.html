@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Analysis Website</title>
+  </head>
+  <body>
+    <h1>Data Analysis Website</h1>
+    <form method="post" action="/analyze" enctype="multipart/form-data">
+      <input type="file" name="file" />
+      <br />
+      <button type="submit">Analyze Data</button>
+    </form>
+    <br />
+    {% if score %}
+    <h2>Score:</h2>
+    <p>{{ score }}</p>
+    {% endif %}
+  </body>
+</html>
